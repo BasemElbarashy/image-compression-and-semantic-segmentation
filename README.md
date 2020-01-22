@@ -1,7 +1,7 @@
 ## Documentation
 - Please check the documentation of [tensorflow compression](https://tensorflow.github.io/compression/)       
-- All code and notebooks are in [code/](https://gitlab.cvc.uab.es/fyang/DIC_cvc/blob/basem/code/)      
-- Detaild documentation [examples/demo.ipynb](https://gitlab.cvc.uab.es/fyang/DIC_cvc/blob/basem/examples/demo.ipynb)                      
+- All code and notebooks are in [code/](https://github.com/BasemElbarashy/image-compression-and-semantic-segmentation/edit/master/code/)      
+- Detaild documentation [code/demo.ipynb](https://github.com/BasemElbarashy/image-compression-and-semantic-segmentation/edit/master/code/demo.ipynb)                      
 - colorlog used so that logs is colored and look different than tensorflow logs               
             
 ```bash
