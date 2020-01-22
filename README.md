@@ -1,5 +1,5 @@
 ## Documentation
-This repo contains the code for all experiments I did for my master thesis and also my implementation of the Dissection method and different fusion methods including the one used in Adaptnet++. You can read the thesis from this (link)[https://drive.google.com/file/d/1C5lx6LBkEn8gWrftGZLeFvIIpSUexPOl/view?usp=sharing].
+This repo contains the code for all experiments I did for my master thesis and also my implementation of the Dissection method and different fusion methods including the one used in Adaptnet++. You can read the thesis from this [link](https://drive.google.com/file/d/1C5lx6LBkEn8gWrftGZLeFvIIpSUexPOl/view?usp=sharing).
 
 - Please check the documentation of [tensorflow compression](https://tensorflow.github.io/compression/)       
 - All code and notebooks are in [code/](https://github.com/BasemElbarashy/image-compression-and-semantic-segmentation/edit/master/code/)      
