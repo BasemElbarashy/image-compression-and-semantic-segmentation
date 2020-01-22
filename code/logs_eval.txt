@@ -1,0 +1,480 @@
+/home/belbarashy/benv/lib/python3.5/site-packages/absl/flags/_validators.py:359: UserWarning: Flag --checkpoint_dir has a non-None default value; therefore, mark_flag_as_required will pass even if flag is not specified in the command line!
+  'command line!' % flag_name)
+WARNING:tensorflow:Please specify a model_variant. See feature_extractor.network_map for supported model variants.
+[32mINFO    [0m | [32mEvaluating on val set[0m
+WARNING:tensorflow:From /home/belbarashy/benv/lib/python3.5/site-packages/tensorflow/python/ops/control_flow_ops.py:423: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:Default mean-subtraction is performed. Please specify a model_variant. See feature_extractor.network_map for supported model variants.
+WARNING:tensorflow:From /home/belbarashy/compression-1.1/examples/bls2017_comp_seg.py:140: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/belbarashy/compression-1.1/examples/seg_exp.py:214: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.conv2d instead.
+WARNING:tensorflow:From /home/belbarashy/compression-1.1/examples/seg_exp.py:231: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+WARNING:tensorflow:From /home/belbarashy/benv/lib/python3.5/site-packages/tensorflow/python/ops/metrics_impl.py:259: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/belbarashy/benv/lib/python3.5/site-packages/tensorflow/python/ops/confusion_matrix.py:194: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/belbarashy/benv/lib/python3.5/site-packages/tensorflow/python/ops/metrics_impl.py:1155: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From eval_seg.py:203: print_model_analysis (from tensorflow.contrib.tfprof.model_analyzer) is deprecated and will be removed after 2018-01-01.
+Instructions for updating:
+Use `tf.profiler.profile(graph, run_meta, op_log, cmd, options)`. Build `options` with `tf.profiler.ProfileOptionBuilder`. See README.md for details
+WARNING:tensorflow:From /home/belbarashy/benv/lib/python3.5/site-packages/tensorflow/python/profiler/internal/flops_registry.py:142: tensor_shape_from_node_def_name (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.compat.v1.graph_util.remove_training_nodes
+Parsing Inputs...
+
+=========================Options=============================
+-max_depth                  10000
+-min_bytes                  0
+-min_peak_bytes             0
+-min_residual_bytes         0
+-min_output_bytes           0
+-min_micros                 0
+-min_accelerator_micros     0
+-min_cpu_micros             0
+-min_params                 0
+-min_float_ops              0
+-min_occurrence             0
+-step                       -1
+-order_by                   name
+-account_type_regexes       _trainable_variables
+-start_name_regexes         .*
+-trim_name_regexes          
+-show_name_regexes          .*
+-hide_name_regexes          
+-account_displayed_op_only  true
+-select                     params
+-output                     stdout:
+
+==================Model Analysis Report======================
+
+Doc:
+scope: The nodes in the model graph are organized by their names, which is hierarchical like filesystem.
+param: Number of parameters (in the Variable).
+
+Profile:
+node name | # parameters
+_TFProfRoot (--/31.84m params)
+  Decoder (--/17.12m params)
+    Decoder/CBR1 (--/2.36m params)
+      Decoder/CBR1/Variable (512, 512/512 params)
+      Decoder/CBR1/conv2d (--/2.36m params)
+        Decoder/CBR1/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Decoder/CBR10 (--/331.90k params)
+      Decoder/CBR10/Variable (128, 128/128 params)
+      Decoder/CBR10/conv2d (--/331.78k params)
+        Decoder/CBR10/conv2d/kernel (3x3x288x128, 331.78k/331.78k params)
+    Decoder/CBR11 (--/147.58k params)
+      Decoder/CBR11/Variable (128, 128/128 params)
+      Decoder/CBR11/conv2d (--/147.46k params)
+        Decoder/CBR11/conv2d/kernel (3x3x128x128, 147.46k/147.46k params)
+    Decoder/CBR13 (--/73.79k params)
+      Decoder/CBR13/Variable (64, 64/64 params)
+      Decoder/CBR13/conv2d (--/73.73k params)
+        Decoder/CBR13/conv2d/kernel (3x3x128x64, 73.73k/73.73k params)
+    Decoder/CBR14 (--/36.93k params)
+      Decoder/CBR14/Variable (64, 64/64 params)
+      Decoder/CBR14/conv2d (--/36.86k params)
+        Decoder/CBR14/conv2d/kernel (3x3x64x64, 36.86k/36.86k params)
+    Decoder/CBR2 (--/2.36m params)
+      Decoder/CBR2/Variable (512, 512/512 params)
+      Decoder/CBR2/conv2d (--/2.36m params)
+        Decoder/CBR2/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Decoder/CBR3 (--/2.36m params)
+      Decoder/CBR3/Variable (512, 512/512 params)
+      Decoder/CBR3/conv2d (--/2.36m params)
+        Decoder/CBR3/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Decoder/CBR4 (--/2.36m params)
+      Decoder/CBR4/Variable (512, 512/512 params)
+      Decoder/CBR4/conv2d (--/2.36m params)
+        Decoder/CBR4/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Decoder/CBR5 (--/2.36m params)
+      Decoder/CBR5/Variable (512, 512/512 params)
+      Decoder/CBR5/conv2d (--/2.36m params)
+        Decoder/CBR5/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Decoder/CBR6 (--/2.36m params)
+      Decoder/CBR6/Variable (512, 512/512 params)
+      Decoder/CBR6/conv2d (--/2.36m params)
+        Decoder/CBR6/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Decoder/CBR7 (--/1.18m params)
+      Decoder/CBR7/Variable (256, 256/256 params)
+      Decoder/CBR7/conv2d (--/1.18m params)
+        Decoder/CBR7/conv2d/kernel (3x3x512x256, 1.18m/1.18m params)
+    Decoder/CBR8 (--/590.08k params)
+      Decoder/CBR8/Variable (256, 256/256 params)
+      Decoder/CBR8/conv2d (--/589.82k params)
+        Decoder/CBR8/conv2d/kernel (3x3x256x256, 589.82k/589.82k params)
+    Decoder/CBR9 (--/590.08k params)
+      Decoder/CBR9/Variable (256, 256/256 params)
+      Decoder/CBR9/conv2d (--/589.82k params)
+        Decoder/CBR9/conv2d/kernel (3x3x256x256, 589.82k/589.82k params)
+    Decoder/output (--/10.96k params)
+      Decoder/output/Variable (19, 19/19 params)
+      Decoder/output/conv2d (--/10.94k params)
+        Decoder/output/conv2d/kernel (3x3x64x19, 10.94k/10.94k params)
+  Encoder (--/14.71m params)
+    Encoder/CBR1 (--/1.79k params)
+      Encoder/CBR1/Variable (64, 64/64 params)
+      Encoder/CBR1/conv2d (--/1.73k params)
+        Encoder/CBR1/conv2d/kernel (3x3x3x64, 1.73k/1.73k params)
+    Encoder/CBR10 (--/2.36m params)
+      Encoder/CBR10/Variable (512, 512/512 params)
+      Encoder/CBR10/conv2d (--/2.36m params)
+        Encoder/CBR10/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Encoder/CBR11 (--/2.36m params)
+      Encoder/CBR11/Variable (512, 512/512 params)
+      Encoder/CBR11/conv2d (--/2.36m params)
+        Encoder/CBR11/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Encoder/CBR12 (--/2.36m params)
+      Encoder/CBR12/Variable (512, 512/512 params)
+      Encoder/CBR12/conv2d (--/2.36m params)
+        Encoder/CBR12/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Encoder/CBR13 (--/2.36m params)
+      Encoder/CBR13/Variable (512, 512/512 params)
+      Encoder/CBR13/conv2d (--/2.36m params)
+        Encoder/CBR13/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+    Encoder/CBR2 (--/36.93k params)
+      Encoder/CBR2/Variable (64, 64/64 params)
+      Encoder/CBR2/conv2d (--/36.86k params)
+        Encoder/CBR2/conv2d/kernel (3x3x64x64, 36.86k/36.86k params)
+    Encoder/CBR3 (--/73.86k params)
+      Encoder/CBR3/Variable (128, 128/128 params)
+      Encoder/CBR3/conv2d (--/73.73k params)
+        Encoder/CBR3/conv2d/kernel (3x3x64x128, 73.73k/73.73k params)
+    Encoder/CBR4 (--/147.58k params)
+      Encoder/CBR4/Variable (128, 128/128 params)
+      Encoder/CBR4/conv2d (--/147.46k params)
+        Encoder/CBR4/conv2d/kernel (3x3x128x128, 147.46k/147.46k params)
+    Encoder/CBR5 (--/295.17k params)
+      Encoder/CBR5/Variable (256, 256/256 params)
+      Encoder/CBR5/conv2d (--/294.91k params)
+        Encoder/CBR5/conv2d/kernel (3x3x128x256, 294.91k/294.91k params)
+    Encoder/CBR6 (--/590.08k params)
+      Encoder/CBR6/Variable (256, 256/256 params)
+      Encoder/CBR6/conv2d (--/589.82k params)
+        Encoder/CBR6/conv2d/kernel (3x3x256x256, 589.82k/589.82k params)
+    Encoder/CBR7 (--/590.08k params)
+      Encoder/CBR7/Variable (256, 256/256 params)
+      Encoder/CBR7/conv2d (--/589.82k params)
+        Encoder/CBR7/conv2d/kernel (3x3x256x256, 589.82k/589.82k params)
+    Encoder/CBR8 (--/1.18m params)
+      Encoder/CBR8/Variable (512, 512/512 params)
+      Encoder/CBR8/conv2d (--/1.18m params)
+        Encoder/CBR8/conv2d/kernel (3x3x256x512, 1.18m/1.18m params)
+    Encoder/CBR9 (--/2.36m params)
+      Encoder/CBR9/Variable (512, 512/512 params)
+      Encoder/CBR9/conv2d (--/2.36m params)
+        Encoder/CBR9/conv2d/kernel (3x3x512x512, 2.36m/2.36m params)
+  conv2d (--/4.10k params)
+    conv2d/kernel (1x1x128x32, 4.10k/4.10k params)
+
+======================End of Report==========================
+Parsing Inputs...
+
+=========================Options=============================
+-max_depth                  10000
+-min_bytes                  0
+-min_peak_bytes             0
+-min_residual_bytes         0
+-min_output_bytes           0
+-min_micros                 0
+-min_accelerator_micros     0
+-min_cpu_micros             0
+-min_params                 0
+-min_float_ops              1
+-min_occurrence             0
+-step                       -1
+-order_by                   float_ops
+-account_type_regexes       .*
+-start_name_regexes         .*
+-trim_name_regexes          
+-show_name_regexes          .*
+-hide_name_regexes          
+-account_displayed_op_only  true
+-select                     float_ops
+-output                     stdout:
+
+==================Model Analysis Report======================
+
+Doc:
+scope: The nodes in the model graph are organized by their names, which is hierarchical like filesystem.
+flops: Number of float operations. Note: Please read the implementation for the math behind it.
+
+Profile:
+node name | # float_ops
+_TFProfRoot (--/6991.99b flops)
+  Decoder/CBR10/conv2d/Conv2D (695.78b/695.78b flops)
+  Decoder/CBR7/conv2d/Conv2D (618.48b/618.48b flops)
+  Decoder/CBR13/conv2d/Conv2D (618.48b/618.48b flops)
+  Encoder/CBR2/conv2d/Conv2D (309.24b/309.24b flops)
+  Decoder/CBR14/conv2d/Conv2D (309.24b/309.24b flops)
+  Encoder/CBR7/conv2d/Conv2D (309.24b/309.24b flops)
+  Encoder/CBR10/conv2d/Conv2D (309.24b/309.24b flops)
+  Encoder/CBR9/conv2d/Conv2D (309.24b/309.24b flops)
+  Decoder/CBR9/conv2d/Conv2D (309.24b/309.24b flops)
+  Encoder/CBR6/conv2d/Conv2D (309.24b/309.24b flops)
+  Decoder/CBR11/conv2d/Conv2D (309.24b/309.24b flops)
+  Decoder/CBR8/conv2d/Conv2D (309.24b/309.24b flops)
+  Decoder/CBR4/conv2d/Conv2D (309.24b/309.24b flops)
+  Encoder/CBR4/conv2d/Conv2D (309.24b/309.24b flops)
+  Decoder/CBR5/conv2d/Conv2D (309.24b/309.24b flops)
+  Decoder/CBR6/conv2d/Conv2D (309.24b/309.24b flops)
+  Encoder/CBR5/conv2d/Conv2D (154.62b/154.62b flops)
+  Encoder/CBR3/conv2d/Conv2D (154.62b/154.62b flops)
+  Encoder/CBR8/conv2d/Conv2D (154.62b/154.62b flops)
+  Decoder/output/conv2d/Conv2D (91.80b/91.80b flops)
+  Encoder/CBR11/conv2d/Conv2D (77.31b/77.31b flops)
+  Decoder/CBR2/conv2d/Conv2D (77.31b/77.31b flops)
+  Decoder/CBR1/conv2d/Conv2D (77.31b/77.31b flops)
+  Encoder/CBR12/conv2d/Conv2D (77.31b/77.31b flops)
+  Decoder/CBR3/conv2d/Conv2D (77.31b/77.31b flops)
+  Encoder/CBR13/conv2d/Conv2D (77.31b/77.31b flops)
+  Encoder/CBR1/conv2d/Conv2D (14.50b/14.50b flops)
+  conv2d/Conv2D (2.15b/2.15b flops)
+  Decoder/CBR14/BiasAdd (268.44m/268.44m flops)
+  Encoder/CBR2/BiasAdd (268.44m/268.44m flops)
+  Encoder/CBR1/BiasAdd (268.44m/268.44m flops)
+  Encoder/pool1/MaxPool (268.44m/268.44m flops)
+  Decoder/CBR13/BiasAdd (268.44m/268.44m flops)
+  Decoder/CBR11/BiasAdd (134.22m/134.22m flops)
+  Encoder/CBR4/BiasAdd (134.22m/134.22m flops)
+  Decoder/CBR10/BiasAdd (134.22m/134.22m flops)
+  Encoder/pool2/MaxPool (134.22m/134.22m flops)
+  Encoder/CBR3/BiasAdd (134.22m/134.22m flops)
+  Decoder/output/BiasAdd (79.69m/79.69m flops)
+  ArgMax (75.50m/75.50m flops)
+  Decoder/CBR7/BiasAdd (67.11m/67.11m flops)
+  Encoder/pool3/MaxPool (67.11m/67.11m flops)
+  Encoder/CBR7/BiasAdd (67.11m/67.11m flops)
+  Decoder/CBR9/BiasAdd (67.11m/67.11m flops)
+  Encoder/CBR6/BiasAdd (67.11m/67.11m flops)
+  Encoder/CBR5/BiasAdd (67.11m/67.11m flops)
+  Decoder/CBR8/BiasAdd (67.11m/67.11m flops)
+  Decoder/CBR4/BiasAdd (33.55m/33.55m flops)
+  Decoder/CBR5/BiasAdd (33.55m/33.55m flops)
+  Encoder/CBR8/BiasAdd (33.55m/33.55m flops)
+  Encoder/CBR9/BiasAdd (33.55m/33.55m flops)
+  Encoder/CBR10/BiasAdd (33.55m/33.55m flops)
+  Decoder/CBR6/BiasAdd (33.55m/33.55m flops)
+  Encoder/pool4/MaxPool (33.55m/33.55m flops)
+  truediv (12.58m/12.58m flops)
+  Encoder/CBR13/BiasAdd (8.39m/8.39m flops)
+  Encoder/CBR12/BiasAdd (8.39m/8.39m flops)
+  Encoder/CBR11/BiasAdd (8.39m/8.39m flops)
+  Decoder/CBR1/BiasAdd (8.39m/8.39m flops)
+  Decoder/CBR2/BiasAdd (8.39m/8.39m flops)
+  Decoder/CBR3/BiasAdd (8.39m/8.39m flops)
+  Decoder/CBR3/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Decoder/CBR3/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Decoder/CBR3/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR9/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Encoder/CBR9/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Encoder/CBR9/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR12/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Encoder/CBR12/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Encoder/CBR12/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR13/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Encoder/CBR13/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Encoder/CBR13/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR6/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Decoder/CBR6/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Decoder/CBR6/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR5/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Decoder/CBR5/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Decoder/CBR5/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR11/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Encoder/CBR11/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Encoder/CBR11/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR4/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Decoder/CBR4/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Decoder/CBR4/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR10/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Encoder/CBR10/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Encoder/CBR10/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR2/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Decoder/CBR2/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Decoder/CBR2/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR1/conv2d/kernel/Initializer/random_uniform (2.36m/4.72m flops)
+    Decoder/CBR1/conv2d/kernel/Initializer/random_uniform/mul (2.36m/2.36m flops)
+    Decoder/CBR1/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  mean_iou/confusion_matrix/assert_less/Less (4.19m/4.19m flops)
+  mean_iou/confusion_matrix/assert_non_negative/assert_less_equal/LessEqual (4.19m/4.19m flops)
+  Encoder/CBR8/conv2d/kernel/Initializer/random_uniform (1.18m/2.36m flops)
+    Encoder/CBR8/conv2d/kernel/Initializer/random_uniform/mul (1.18m/1.18m flops)
+    Encoder/CBR8/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR7/conv2d/kernel/Initializer/random_uniform (1.18m/2.36m flops)
+    Decoder/CBR7/conv2d/kernel/Initializer/random_uniform/mul (1.18m/1.18m flops)
+    Decoder/CBR7/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR7/conv2d/kernel/Initializer/random_uniform (589.82k/1.18m flops)
+    Encoder/CBR7/conv2d/kernel/Initializer/random_uniform/mul (589.82k/589.82k flops)
+    Encoder/CBR7/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR6/conv2d/kernel/Initializer/random_uniform (589.82k/1.18m flops)
+    Encoder/CBR6/conv2d/kernel/Initializer/random_uniform/mul (589.82k/589.82k flops)
+    Encoder/CBR6/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR8/conv2d/kernel/Initializer/random_uniform (589.82k/1.18m flops)
+    Decoder/CBR8/conv2d/kernel/Initializer/random_uniform/mul (589.82k/589.82k flops)
+    Decoder/CBR8/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR9/conv2d/kernel/Initializer/random_uniform (589.82k/1.18m flops)
+    Decoder/CBR9/conv2d/kernel/Initializer/random_uniform/mul (589.82k/589.82k flops)
+    Decoder/CBR9/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR10/conv2d/kernel/Initializer/random_uniform (331.78k/663.55k flops)
+    Decoder/CBR10/conv2d/kernel/Initializer/random_uniform/mul (331.78k/331.78k flops)
+    Decoder/CBR10/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR5/conv2d/kernel/Initializer/random_uniform (294.91k/589.83k flops)
+    Encoder/CBR5/conv2d/kernel/Initializer/random_uniform/mul (294.91k/294.91k flops)
+    Encoder/CBR5/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR4/conv2d/kernel/Initializer/random_uniform (147.46k/294.91k flops)
+    Encoder/CBR4/conv2d/kernel/Initializer/random_uniform/mul (147.46k/147.46k flops)
+    Encoder/CBR4/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR11/conv2d/kernel/Initializer/random_uniform (147.46k/294.91k flops)
+    Decoder/CBR11/conv2d/kernel/Initializer/random_uniform/mul (147.46k/147.46k flops)
+    Decoder/CBR11/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR13/conv2d/kernel/Initializer/random_uniform (73.73k/147.46k flops)
+    Decoder/CBR13/conv2d/kernel/Initializer/random_uniform/mul (73.73k/73.73k flops)
+    Decoder/CBR13/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR3/conv2d/kernel/Initializer/random_uniform (73.73k/147.46k flops)
+    Encoder/CBR3/conv2d/kernel/Initializer/random_uniform/mul (73.73k/73.73k flops)
+    Encoder/CBR3/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR14/conv2d/kernel/Initializer/random_uniform (36.86k/73.73k flops)
+    Decoder/CBR14/conv2d/kernel/Initializer/random_uniform/mul (36.86k/36.86k flops)
+    Decoder/CBR14/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR2/conv2d/kernel/Initializer/random_uniform (36.86k/73.73k flops)
+    Encoder/CBR2/conv2d/kernel/Initializer/random_uniform/mul (36.86k/36.86k flops)
+    Encoder/CBR2/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/output/conv2d/kernel/Initializer/random_uniform (10.94k/21.89k flops)
+    Decoder/output/conv2d/kernel/Initializer/random_uniform/mul (10.94k/10.94k flops)
+    Decoder/output/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  conv2d/kernel/Initializer/random_uniform (4.10k/8.19k flops)
+    conv2d/kernel/Initializer/random_uniform/mul (4.10k/4.10k flops)
+    conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Encoder/CBR1/conv2d/kernel/Initializer/random_uniform (1.73k/3.46k flops)
+    Encoder/CBR1/conv2d/kernel/Initializer/random_uniform/mul (1.73k/1.73k flops)
+    Encoder/CBR1/conv2d/kernel/Initializer/random_uniform/sub (1/1 flops)
+  Decoder/CBR5/random_normal (512/1.02k flops)
+    Decoder/CBR5/random_normal/mul (512/512 flops)
+  Decoder/CBR1/random_normal (512/1.02k flops)
+    Decoder/CBR1/random_normal/mul (512/512 flops)
+  Decoder/CBR2/random_normal (512/1.02k flops)
+    Decoder/CBR2/random_normal/mul (512/512 flops)
+  Encoder/CBR13/random_normal (512/1.02k flops)
+    Encoder/CBR13/random_normal/mul (512/512 flops)
+  Decoder/CBR6/random_normal (512/1.02k flops)
+    Decoder/CBR6/random_normal/mul (512/512 flops)
+  Encoder/CBR10/random_normal (512/1.02k flops)
+    Encoder/CBR10/random_normal/mul (512/512 flops)
+  Decoder/CBR3/random_normal (512/1.02k flops)
+    Decoder/CBR3/random_normal/mul (512/512 flops)
+  Encoder/CBR9/random_normal (512/1.02k flops)
+    Encoder/CBR9/random_normal/mul (512/512 flops)
+  Encoder/CBR12/random_normal (512/1.02k flops)
+    Encoder/CBR12/random_normal/mul (512/512 flops)
+  Decoder/CBR4/random_normal (512/1.02k flops)
+    Decoder/CBR4/random_normal/mul (512/512 flops)
+  Encoder/CBR8/random_normal (512/1.02k flops)
+    Encoder/CBR8/random_normal/mul (512/512 flops)
+  Encoder/CBR11/random_normal (512/1.02k flops)
+    Encoder/CBR11/random_normal/mul (512/512 flops)
+  Encoder/CBR5/random_normal (256/512 flops)
+    Encoder/CBR5/random_normal/mul (256/256 flops)
+  Encoder/CBR7/random_normal (256/512 flops)
+    Encoder/CBR7/random_normal/mul (256/256 flops)
+  Encoder/CBR6/random_normal (256/512 flops)
+    Encoder/CBR6/random_normal/mul (256/256 flops)
+  Decoder/CBR7/random_normal (256/512 flops)
+    Decoder/CBR7/random_normal/mul (256/256 flops)
+  Decoder/CBR8/random_normal (256/512 flops)
+    Decoder/CBR8/random_normal/mul (256/256 flops)
+  Decoder/CBR9/random_normal (256/512 flops)
+    Decoder/CBR9/random_normal/mul (256/256 flops)
+  mean_iou/AssignAdd (361/361 flops)
+  mean_iou/Sum_1 (342/342 flops)
+  mean_iou/Sum (342/342 flops)
+  Encoder/CBR4/random_normal (128/256 flops)
+    Encoder/CBR4/random_normal/mul (128/128 flops)
+  Encoder/CBR3/random_normal (128/256 flops)
+    Encoder/CBR3/random_normal/mul (128/128 flops)
+  Decoder/CBR11/random_normal (128/256 flops)
+    Decoder/CBR11/random_normal/mul (128/128 flops)
+  Decoder/CBR10/random_normal (128/256 flops)
+    Decoder/CBR10/random_normal/mul (128/128 flops)
+  Decoder/CBR14/random_normal (64/128 flops)
+    Decoder/CBR14/random_normal/mul (64/64 flops)
+  Encoder/CBR1/random_normal (64/128 flops)
+    Encoder/CBR1/random_normal/mul (64/64 flops)
+  Encoder/CBR2/random_normal (64/128 flops)
+    Encoder/CBR2/random_normal/mul (64/64 flops)
+  Decoder/CBR13/random_normal (64/128 flops)
+    Decoder/CBR13/random_normal/mul (64/64 flops)
+  Decoder/output/random_normal (19/38 flops)
+    Decoder/output/random_normal/mul (19/19 flops)
+  mean_iou/Greater (19/19 flops)
+  mean_iou/NotEqual (19/19 flops)
+  mean_iou/add (19/19 flops)
+  mean_iou/div (19/19 flops)
+  mean_iou/sub (19/19 flops)
+  mean_iou/Sum_2 (18/18 flops)
+  mean_iou/mean_iou (18/18 flops)
+  Decoder/mul_1 (2/2 flops)
+  Decoder/mul (2/2 flops)
+  Decoder/mul_2 (2/2 flops)
+  Decoder/mul_3 (2/2 flops)
+  mean_iou/Greater_1 (1/1 flops)
+  mean_iou/truediv (1/1 flops)
+
+======================End of Report==========================
+5 ops no flops stats due to incomplete shapes.
+5 ops no flops stats due to incomplete shapes.
+[32mINFO    [0m | [32mstart evaluating last 5 checkpoints[0m
+INFO:tensorflow:Starting evaluation at 2019-08-14T20:43:02Z
+INFO:tensorflow:Graph was finalized.
+2019-08-14 22:43:02.880564: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-08-14 22:43:05.093629: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x6b73f10 executing computations on platform CUDA. Devices:
+2019-08-14 22:43:05.093672: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): TITAN Xp, Compute Capability 6.1
+2019-08-14 22:43:05.098317: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199840000 Hz
+2019-08-14 22:43:05.103166: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x6cd48f0 executing computations on platform Host. Devices:
+2019-08-14 22:43:05.103201: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-08-14 22:43:05.104285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:07:00.0
+totalMemory: 11.91GiB freeMemory: 11.75GiB
+2019-08-14 22:43:05.104836: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-08-14 22:43:05.123752: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-08-14 22:43:05.123819: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-08-14 22:43:05.123832: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-08-14 22:43:05.124856: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11427 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:07:00.0, compute capability: 6.1)
+WARNING:tensorflow:From /home/belbarashy/benv/lib/python3.5/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from ../experiments/exp_seg_fixedlr1e4_noBatchNorm/model.ckpt-198214
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-08-14-20:46:10
+[32mINFO    [0m | [32m../experiments/exp_seg_fixedlr1e4_noBatchNorm/model.ckpt-198214 ==> mIOU 0.45863634[0m
+[32mINFO    [0m | [32m==============================================[0m
+[32mINFO    [0m | [32mhighest_val_miou = 0.45863634[0m
+[32mINFO    [0m | [32mbest_chekpnt = ../experiments/exp_seg_fixedlr1e4_noBatchNorm/model.ckpt-198214[0m
+[32mINFO    [0m | [32m==============================================[0m
+WARNING:tensorflow:Please specify a model_variant. See feature_extractor.network_map for supported model variants.
+WARNING:tensorflow:Default mean-subtraction is performed. Please specify a model_variant. See feature_extractor.network_map for supported model variants.
+2019-08-14 22:46:12.581129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-08-14 22:46:12.581633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-08-14 22:46:12.581789: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-08-14 22:46:12.581889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-08-14 22:46:12.582304: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11427 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:07:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from ../experiments/exp_seg_fixedlr1e4_noBatchNorm/model.ckpt-198214
+
+WARNING: The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+If you depend on functionality not listed there, please file an issue.
+

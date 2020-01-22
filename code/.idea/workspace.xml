@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abf9a59f-2f67-440f-9086-03517b2caab1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/exps-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/exps-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/visualize semantic maps-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/visualize semantic maps-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bls2017.py" beforeDir="false" afterPath="$PROJECT_DIR$/bls2017.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bls2017_comp_seg.py" beforeDir="false" afterPath="$PROJECT_DIR$/bls2017_comp_seg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compare test images.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/compare test images.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_seg.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_seg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exps.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/exps.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_exp_seg_comp.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_exp_seg_comp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seg_exp.py" beforeDir="false" afterPath="$PROJECT_DIR$/seg_exp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualize semantic maps.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/visualize semantic maps.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../logs.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/bls2017.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/bls2017_comp_seg.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/seg_exp.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/run_exp_seg_comp.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/models.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/eval_seg.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/plot_graphs.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1OWjQ4gTCwPjA3SiOTCF2aZGsSX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abf9a59f-2f67-440f-9086-03517b2caab1" name="Default Changelist" comment="" />
+      <created>1564100228138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564100228138</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
