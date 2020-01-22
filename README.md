@@ -1,1 +1,0 @@
-# image-compression-and-semantic-segmentation
